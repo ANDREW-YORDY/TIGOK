@@ -1,10 +1,28 @@
 
 <h2 style="text-align: center; margin-top: 1%;">DATOS QUEMADOS</h2>
 
-<div class="container" *ngFor="let person of fakeData">
+<!-- <div class="container" *ngFor="let person of fakeData">
     <p>ID: {{ person.id }}</p>
     <p>Nombre: {{ person.nombre }}</p>
     <p>Correo: {{ person.correo }}</p>
     <hr>
+  </div> -->
+
+  <div class="container">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>NOMBRE</th>
+          <th>CORREO</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let person of fakeData">
+          <td>{{ person.nombre }}</td>
+          <td>{{ person.correo }}</td>
+      </tr>
+      </tbody>
+    </table>
   </div>
+
   

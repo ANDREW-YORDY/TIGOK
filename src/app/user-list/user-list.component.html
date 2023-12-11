@@ -1,12 +1,30 @@
 
-<div class="container text-center mt-4">
+<div class="container text-center mt-7">
     <h2>API CONSUMING</h2>
     <h2 style="color: red; margin-bottom: 2%;">USER-LIST</h2>
-
+</div>
+<!-- 
+<div class="container text-center mt-7">
     <div class="container" *ngFor="let  user of users">
         <p>Nombre: {{ user.name }}</p>
         <p>Email : {{ user.email }}</p>
         <hr>
     </div>
-</div>
+</div> -->
 
+<div class="container col-7">
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th  scope="col">USER</th>
+                <th  scope="col">EMAIL</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let user of users">
+                <td>{{ user.name }}</td>
+                <td>{{ user.email }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
