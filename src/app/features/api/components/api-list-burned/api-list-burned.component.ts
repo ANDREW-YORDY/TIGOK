@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { ApiService } from '../api.service';
+import { ApiService } from '../../../../core/services/api-burnerd/api.service';
 
 @Component({
-  selector: 'app-data-display',
-  templateUrl: './data-display.component.html',
-  styleUrls: ['./data-display.component.css']
+  selector: 'app-api-list-burned',
+  templateUrl: './api-list-burned.component.html',
+  styleUrls: ['./api-list-burned.component.css']
 })
 export class DataDisplayComponent implements OnInit {
 

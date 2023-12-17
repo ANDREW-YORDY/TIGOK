@@ -1,0 +1,12 @@
+/* Agrega estilos al pasar el cursor sobre los enlaces de navegación */
+.nav-link:hover {
+    color: black; /* Cambia el color al pasar el cursor */
+    text-decoration: none; /* Añade un subrayado al pasar el cursor */
+    background-color: #007bff;
+}
+  
+  /* Agrega estilos al enlace activo */
+  .nav-link.active {
+    font-weight: bold; /* Cambia el peso de la fuente para indicar la ruta activa */
+  }
+  
